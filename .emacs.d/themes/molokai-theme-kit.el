@@ -78,14 +78,12 @@
                                                   'help-echo "Buffer is read-only"))))
                "] "
 
-               ;; add the time, with the date and the emacs uptime in the tooltip
-               '(:eval (propertize (format-time-string "%H:%M")
-                                   'help-echo
-                                   (concat (format-time-string "%c; ")
-                                           (emacs-uptime "Uptime:%hh"))))
+	       ;; display file encoding
+	       (concat "[" "%Z" "] ")
+
                " --"
                ;; i don't want to see minor-modes; but if you want, uncomment this:
-               ;; minor-mode-alist  ;; list of minor modes
+               minor-mode-alist  ;; list of minor modes
                "%-" ;; fill with '-'
                ))
 
