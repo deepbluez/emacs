@@ -1,5 +1,9 @@
 ;; 加载 molokai 主题
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(add-to-list 'load-path "~/.emacs.d/themes")
+
+;; 载入 molokai 主题的附加工具，能够给状态栏提供更丰富的提示
+(load "molokai-theme-kit")
 (setq molokai-theme-kit t)
 
 (custom-set-variables
