@@ -2,11 +2,7 @@
 
 ;; 设置默认的载入路径
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(add-to-list 'load-path "~/.emacs.d/themes")
-
-;; 载入 molokai 主题的附加工具，能够给状态栏提供更丰富的提示
-(load "molokai-theme-kit")
-(setq molokai-theme-kit t)
+(add-to-list 'load-path "~/.emacs.d/elisp")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -25,3 +21,10 @@
  '(default ((t (:family "Yahei Mono" :foundry "outline" :slant normal :weight normal :height 98 :width normal)))))
 
 
+;; ----------------------------------------------
+;; 下面是按照不同功能分开加载的配置项
+;; ----------------------------------------------
+
+;; 载入定制的状态栏提示
+(load "mode-line")
+;; TODO:vcs-tip,selection-tip
