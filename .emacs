@@ -1,8 +1,10 @@
-;; ¼ÓÔØ molokai Ö÷Ìâ
+;; -*- coding: utf-8 -*-
+
+;; è®¾ç½®é»˜è®¤çš„è½½å…¥è·¯å¾„
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'load-path "~/.emacs.d/themes")
 
-;; ÔØÈë molokai Ö÷ÌâµÄ¸½¼Ó¹¤¾ß£¬ÄÜ¹»¸ø×´Ì¬À¸Ìá¹©¸ü·á¸»µÄÌáÊ¾
+;; è½½å…¥ molokai ä¸»é¢˜çš„é™„åŠ å·¥å…·ï¼Œèƒ½å¤Ÿç»™çŠ¶æ€æ æä¾›æ›´ä¸°å¯Œçš„æç¤º
 (load "molokai-theme-kit")
 (setq molokai-theme-kit t)
 
