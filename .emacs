@@ -28,3 +28,6 @@
 ;; 载入定制的状态栏提示
 (load "mode-line")
 ;; TODO:vcs-tip,selection-tip
+
+;; 加载包管理器，并添加常用源
+(load "elpa")
