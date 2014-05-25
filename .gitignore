@@ -1,2 +1,5 @@
 *.elc
 *~
+
+# plugins temporary files
+.ido.last
