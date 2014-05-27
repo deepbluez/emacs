@@ -8,3 +8,7 @@
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 (package-initialize)
+
+
+;; 启用 yasnippet
+(yas-global-mode 1)
