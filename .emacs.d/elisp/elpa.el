@@ -12,3 +12,6 @@
 
 ;; 启用 yasnippet
 (yas-global-mode 1)
+
+;; 启用 TabBar
+(tabbar-mode t)
