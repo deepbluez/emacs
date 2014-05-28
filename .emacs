@@ -44,3 +44,6 @@
 
 ;; 加载并配置手工管理的插件包
 (load "plugins")
+
+;; 加载键盘设置
+(load "keyboard-config")

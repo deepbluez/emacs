@@ -15,5 +15,3 @@
 
 ;; 启用 TabBar
 (tabbar-mode t)
-(global-set-key (kbd "M-N") 'tabbar-forward)
-(global-set-key (kbd "M-P") 'tabbar-backward)
