@@ -20,12 +20,7 @@
  '(custom-safe-themes (quote ("17a4e8ceb0320f07f4087c85ad4a452fc82d8b7b70d16eda8e3f4df138223399" "d2b1a25a5e2ed8815fe07a7ebf1b27e7095966bd0eb5afb8d0d1e85ef4809998" "" default)))
  '(safe-local-variable-values (quote ((encoding . utf-8))))
  '(tool-bar-mode nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:family "Yahei Mono" :foundry "outline" :slant normal :weight normal :height 98 :width normal)))))
+
 
 
 ;; ----------------------------------------------
@@ -44,6 +39,9 @@
 
 ;; 加载并配置手工管理的插件包
 (load "plugins")
+
+;; 
+(load "font-config")
 
 ;; 加载键盘设置
 (load "keyboard-config")
