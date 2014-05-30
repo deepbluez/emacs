@@ -26,3 +26,6 @@
 	    (lambda ()
 	      (local-set-key (kbd "<f5>") 'eval-buffer-or-region)
 	      )))
+
+;; 按 F12 会调出交互性的 Lisp Shell - IELM
+(global-set-key (kbd "<f12>") 'ielm)
