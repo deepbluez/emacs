@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: Emacs
+# key: u8
+# binding: direct-keybinding
+# --
+-*- encoding: utf-8 -*-
