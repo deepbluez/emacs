@@ -16,9 +16,10 @@
    "若存在选区则运行选区，否则运行当前文件"
    (interactive)
    (if (region-active-p)
-       (eval-region)
+       (eval-region (region-beginning) (region-end) t)
      (eval-buffer)
    ))
+
 (dolist (hook (list
 	       'emacs-lisp-mode-hook
 	       'lisp-interactive-mode-hook))
