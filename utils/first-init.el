@@ -8,3 +8,6 @@
 (package-install 'ecb)
 (package-install 'pymacs)
 (package-install 'yasnippet)
+(package-install 'markdown-mode)
+(package-install 'markdown-mode+)
+(package-install 'markdown-toc)
