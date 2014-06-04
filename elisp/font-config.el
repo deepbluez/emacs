@@ -8,10 +8,15 @@
 ;; 中英文字体对比测试行，互相对齐表明中英文字体大小一致。
 ;; ----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-
 ;; 一一十一一十一一十一一十一一十一一十一一十一一十一一十一一十一一十一一十一一十
+;; 字符外观对照表
+;; abcdefghijklmnopqrstuvwxyz
+;; ABCDEFGHIJKLMNOPQRSTUVWXYZ
+;; 1234567890
+;; ~!@#$%^&*()-=_+[]{};:'"<>,./?|\
 
-(setq default-english-font '("Monaco" "Consolas" "DejaVu Sans Mono" "Monospace" "Courier New"))
+(setq default-english-font '("DejaVu Sans Mono" "Monaco" "Consolas" "Monospace" "Courier New"))
 (setq default-english-size ":pixelsize=14")
-(setq default-chinese-font '("Microsoft Yahei" "文泉驿等宽微米黑" "黑体" "新宋体" "宋体"))
+(setq default-chinese-font '("Microsoft Yahei" "微软雅黑" "文泉驿等宽微米黑" "新宋体" "宋体" "黑体"))
 (setq default-chinese-size nil)
 
 ;; ----------------------------------------------------------------------
