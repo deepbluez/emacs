@@ -28,5 +28,10 @@
 	      (local-set-key (kbd "<f5>") 'eval-buffer-or-region)
 	      )))
 
-;; 按 F12 会调出交互性的 Lisp Shell - IELM
-(global-set-key (kbd "<f12>") 'ielm)
+;; 按 C-f12 会调出交互性的 Lisp Shell - IELM
+(global-set-key (kbd "<C-f12>") 'ielm)
+
+;; f12 切换当前缓冲区行号显示
+(global-set-key (kbd "<f12>") 'linum-mode)
+;; M-f12 切换全局行号显示
+(global-set-key (kbd "<M-f12>") 'global-linum-mode)
