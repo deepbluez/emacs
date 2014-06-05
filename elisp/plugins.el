@@ -2,3 +2,4 @@
 
 ;; 手工插件包管理器
 
+(require 'ibuffer)

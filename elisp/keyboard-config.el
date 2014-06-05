@@ -11,6 +11,17 @@
 (global-set-key (kbd "M-N") 'tabbar-forward)
 (global-set-key (kbd "M-P") 'tabbar-backward)
 
+;; ibuffer 按键绑定
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+
+
+
+;; ----------------------------------------------------------------------
+;; 功能键区的热键设置 (F1-F12)
+
+;; ----------------------------------------
+;; F5
+
 ;; 在 lisp 模式中，将F5绑定为执行当前缓冲或选区（若选中了文本）
 (defun eval-buffer-or-region ()
    "若存在选区则运行选区，否则运行当前文件"
@@ -28,6 +39,9 @@
 	      (local-set-key (kbd "<f5>") 'eval-buffer-or-region)
 	      )))
 
+;; ----------------------------------------
+;; F12
+
 ;; 按 C-f12 会调出交互性的 Lisp Shell - IELM
 (global-set-key (kbd "<C-f12>") 'ielm)
 
@@ -35,3 +49,6 @@
 (global-set-key (kbd "<f12>") 'linum-mode)
 ;; M-f12 切换全局行号显示
 (global-set-key (kbd "<M-f12>") 'global-linum-mode)
+
+;; 功能键区热键设置结束
+;; ----------------------------------------------------------------------
