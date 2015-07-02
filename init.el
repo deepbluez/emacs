@@ -29,7 +29,7 @@
 (load "plugins")
 
 ;; 
-(load "font-config")
+(when window-system (load "font-config"))
 
 ;; 加载键盘设置
 (load "keyboard-config")
