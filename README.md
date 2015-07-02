@@ -6,9 +6,27 @@
 
 ## 基本说明 ##
 
-所有的配置项都位于 `~/.emacs` 文件和 `~/.emacs.d` 目录中，其中分成了多个不同的子目录，按照功能分成不同的目录和配置文件。
+所有的配置项都位于 `~/.emacs.d` 目录中，其中分成了多个不同的子目录，按照功能分成不同的目录和配置文件。
 
 独立的 .el 配置文件位于 `~/.emacs.d/elisp` 目录，这个目录已被加入 `load-path` ，在 `.emacs` 中使用 `load` 指令直接引用，如 `(load font-set)`
+
+## 安装方式 ##
+在 CentOS / Ubuntu 等环境：
+
+cd ~/.emacs.d
+
+rm -fr auto-save-list/
+
+git clone https://github.com/deepbluez/emacs.git .
+
+安装后需要初始化插件：
+
+emacs ~/.emacs.d/utils/first-init.el
+
+进入 emacs 后按 `M-x eval-buffer` 来更新插件。
+
+### Windows 下的安装 ###
+TODO
 
 ### 外观配置 ###
 
