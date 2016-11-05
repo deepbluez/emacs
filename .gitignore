@@ -1,5 +1,7 @@
 *.elc
 *~
+elpa/
 
 # plugins temporary files
 .ido.last
+recentf
