@@ -4,6 +4,10 @@
 
 所有配置项目均使用 GNU Emacs 24 在 Windows 下测试，不保证其他版本可正常使用。
 
+* update @ 2016-11
+* 整合更多组件，并配合 MacOS 更新
+* 支持 Emacs 25
+
 ## 基本说明 ##
 
 所有的配置项都位于 `~/.emacs.d` 目录中，其中分成了多个不同的子目录，按照功能分成不同的目录和配置文件。
@@ -11,13 +15,14 @@
 独立的 .el 配置文件位于 `~/.emacs.d/elisp` 目录，这个目录已被加入 `load-path` ，在 `.emacs` 中使用 `load` 指令直接引用，如 `(load font-set)`
 
 ## 安装方式 ##
-在 CentOS / Ubuntu 等环境：
+在 CentOS / Ubuntu / MacOS X 等环境：
 
 cd ~/.emacs.d
 
 rm -fr auto-save-list/
 
 git clone https://github.com/deepbluez/emacs.git .
+git submodule update
 
 安装后需要初始化插件：
 
