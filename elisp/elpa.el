@@ -20,6 +20,11 @@
 
 ;; 启用 TabBar
 (tabbar-mode t)
+(load "elpa-tabbar-extras")
+;; 绑定 M-j 和 M-k 为切换标签按键
+(global-set-key [(meta j)] 'tabbar-backward)
+(global-set-key [(meta k)] 'tabbar-forward)
+
 
 ;; 设置 markdown 的默认转换器。要求系统中安装 pandoc
 ;; 设置语法高亮模式为 pygments，与 bitbucket.org 兼容
