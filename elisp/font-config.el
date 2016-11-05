@@ -2,8 +2,11 @@
 
 ;; 编辑器字体配置
 
-;; Windows 默认配置英文为 Monaco 字体，中文为雅黑。字号11
+;; Windows 默认配置英文为 Monaco 字体，中文为雅黑。字号11，缩放设置为1.2
 ;; Linux: DejaVu Sans Mono 和雅黑字体显示效果也很好。
+;; MacOS: Menlo, 中文雅黑字体需要安装，缩放设置为1.3；冬青黑体简体中文与 Source Code Pro 配合较好
+;; 其他字体： Source Code Pro 等
+;; TODO: face-font-rescale-alist 并未生效，使用冬青黑体时，英文字号12对应中文字号14
 
 ;; 中英文字体对比测试行，互相对齐表明中英文字体大小一致。
 ;; ----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-
@@ -14,10 +17,10 @@
 ;; 1234567890
 ;; ~!@#$%^&*()-=_+[]{};:'"<>,./?|\
 
-(setq default-english-font '("DejaVu Sans Mono" "Monaco" "Consolas" "Monospace" "Courier New"))
-(setq default-english-size ":pixelsize=14")
-(setq default-chinese-font '("Microsoft Yahei" "微软雅黑" "文泉驿等宽微米黑" "新宋体" "宋体" "黑体"))
-(setq default-chinese-size nil)
+(setq default-english-font '("Source Code Pro" "Menlo" "DejaVu Sans Mono" "Monaco" "Consolas" "Monospace" "Courier New"))
+(setq default-english-size ":pixelsize=12")
+(setq default-chinese-font '("冬青黑体简体中文" "微软雅黑" "文泉驿等宽微米黑" "新宋体" "宋体" "黑体"))
+(setq default-chinese-size 14)
 
 ;; ----------------------------------------------------------------------
 ;; 下面的设置可以自动从系统中检索并设置可用字体
@@ -69,7 +72,8 @@
 
 ;; 修正字体无法正确缩放的问题
 (setq face-font-rescale-alist '(
-				("微软雅黑" . 1.2)
+				("冬青黑体简体中文" . 1.3)
+				("微软雅黑" . 1.3)
 				("Microsoft Yahei" . 1.2)
 				("WenQuanYi Zen Hei" . 1.2)
 				))
