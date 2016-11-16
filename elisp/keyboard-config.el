@@ -6,6 +6,9 @@
 (when window-system (define-prefix-command 'ctl-z-map))
 (when window-system (global-set-key (kbd "C-z") 'ctl-z-map))
 
+;; 将 C-x C-c 绑定为显示缓冲列表(ibuffer)，防止手快关掉软件
+(when window-system (global-set-key(kbd "C-x C-c") 'ibuffer))
+
 ;; tabbar 按键绑定
 ;; 上一个/下一个标签页(默认是 C-c C-left 和 C-c C-right 太难按了)
 (global-set-key (kbd "M-N") 'tabbar-forward)

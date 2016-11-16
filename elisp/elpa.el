@@ -38,3 +38,9 @@
 ;; 绑定 C-x C-r 到打开历史记录清单
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 (run-at-time nil (* 5 60) 'recentf-save-list)
+
+
+;; auto-complete
+(require 'auto-complete)
+(load "elpa-auto-complete-extras")
+ 

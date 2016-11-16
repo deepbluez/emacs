@@ -11,3 +11,8 @@
 (package-install 'markdown-mode)
 (package-install 'markdown-mode+)
 (package-install 'markdown-toc)
+(package-install 'history)
+
+;; auto-complete 和依赖项目
+(package-install 'fuzzy)
+(package-install 'auto-complete)
